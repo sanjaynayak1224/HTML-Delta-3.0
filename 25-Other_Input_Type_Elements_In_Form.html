@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Other Input Type Elements In Form</title>
+  </head>
+
+  <body>
+    <form action="/server">
+      <!--Checkbox element-->
+      <section>
+        <input type="checkbox" name="age" id="age" />
+        <label for="age">Iam 18+</label>
+      </section>
+
+      <section>
+        <input type="checkbox" name="age" id="age" checked />
+        <!--defaulty keeps the check box checked-->
+        <label for="age">Iam 18+</label>
+      </section>
+      <hr />
+      <!--Radio Button-->
+      <input type="radio" name="fruit" id="apple" value="apple" />
+      <label for="apple">Apple</label>
+
+      <input type="radio" name="fruit" id="mango" value="mango"/>
+      <label for="mango">Mango</label>
+
+      <input type="radio" name="fruit" id="orange" value="orange" />
+      <label for="orange">Orange</label>
+      <!--NOTE THAT the name for all the options in the radio element has to be the same inorder to be able to select any one out of the given options-->
+      <br>
+
+      <!-- grouping checkbox buttons with same names-->
+      <input type="checkbox" name="subjects" id="maths" value="maths" />
+      <label for="maths">Maths</label>
+      <input type="checkbox" name="subjects" id="chem" value="chem" />
+      <label for="chem">Chemistry</label>
+
+
+      
+
+
+  
+      <button>submit</button>
+    </form>
+  </body>
+</html>
