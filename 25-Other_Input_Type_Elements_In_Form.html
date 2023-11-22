@@ -15,34 +15,60 @@
       </section>
 
       <section>
-        <input type="checkbox" name="age" id="age" checked />
+        <input type="checkbox" name="Age" id="Age" checked />
         <!--defaulty keeps the check box checked-->
-        <label for="age">Iam 18+</label>
+        <label for="Age">Iam 18+</label>
       </section>
       <hr />
       <!--Radio Button-->
       <input type="radio" name="fruit" id="apple" value="apple" />
       <label for="apple">Apple</label>
 
-      <input type="radio" name="fruit" id="mango" value="mango"/>
+      <input type="radio" name="fruit" id="mango" value="mango" />
       <label for="mango">Mango</label>
 
       <input type="radio" name="fruit" id="orange" value="orange" />
       <label for="orange">Orange</label>
       <!--NOTE THAT the name for all the options in the radio element has to be the same inorder to be able to select any one out of the given options-->
-      <br>
+      <br />
 
       <!-- grouping checkbox buttons with same names-->
       <input type="checkbox" name="subjects" id="maths" value="maths" />
       <label for="maths">Maths</label>
       <input type="checkbox" name="subjects" id="chem" value="chem" />
       <label for="chem">Chemistry</label>
+      <br />
 
+      <!--Select Element-->
+      <section>
+        <label for="proffession">Choose your proffession</label>
+        <select name="proffession" id="proffession">
+          <option>Select your option</option>
+          <option value="stu" selected>Student</option>
+          <!--defaultly keeps the student option selected-->
+          <option value="dev">Developer</option>
+        </select>
+      </section>
 
-      
+      <!--Range Element-->
+      <section>
+        <label for="vol">Select Your Volume:</label>
+        <input type="range" min="0" max="100" name="Range" id="vol" step="10" />
 
+        <label for="volume">Select Your Volume:</label>
+        <input type="range" min="0" max="100" name="Ranges" id="volume" value="70" />
+        <!--Defaultly sets the value to 70-->
+      </section>
 
-  
+      <!--Text Area Element-->
+      <section>
+        <label for="feedback">Please provide your feedback:</label>
+        <textarea id="feedback" name="feedback" placeholder="write your feedback here"></textarea>
+
+        <label for="feedbacks">Please provide your feedback:</label>
+        <textarea id="feedbacks" name="feedbacks" rows="5" cols="100"></textarea>
+      </section>
+
       <button>submit</button>
     </form>
   </body>
